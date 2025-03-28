@@ -1,0 +1,42 @@
+type: edu
+custom_name: "Task: Fruits Delivery"
+files:
+    -   name: src/lib.rs
+        visible: true
+        placeholders:
+            -   offset: 101
+                length: 30
+                placeholder_text: // Declare your hash map here
+                initial_state:
+                    length: 29
+                    offset: 101
+                initialized_from_dependency: false
+                encrypted_possible_answer: DSd5Y+Jz/Qr8fw/mfaiGpA==
+                selected: false
+                status: Solved
+            -   offset: 230
+                length: 323
+                placeholder_text: // Put more fruits in your basket here!
+                initial_state:
+                    length: 39
+                    offset: 229
+                initialized_from_dependency: false
+                encrypted_possible_answer: MYy/3Tuw15jZoILD2yqWEH12p+Mz6P3se1gVlzRgbmHHY14bGQzaV4GrR09vXLpP5Tcz6gW9cWUV8YR0WC/duCFhI6ZkEg+GxskAA9NVPC83NJFWvFP7aoyu2/EaSyuA
+                selected: true
+                status: Solved
+        learner_created: false
+    -   name: src/main.rs
+        visible: true
+        learner_created: false
+    -   name: Cargo.toml
+        visible: false
+        learner_created: false
+    -   name: tests/tests.rs
+        visible: false
+        learner_created: false
+feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Common+Collections+/+Hashmaps+/+Fruits+Delivery
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Tue, 25 Mar 2025 21:50:17 UTC"
+record: -1

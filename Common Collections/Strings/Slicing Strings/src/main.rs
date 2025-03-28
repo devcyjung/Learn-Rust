@@ -1,0 +1,42 @@
+fn main() {
+    let hello = "Здравствуйте";
+    let s = &hello[..2];
+    let l = &hello[hello.len() - 2..];
+    println!("{}", s); // Prints "З"
+    println!("{}", l);
+    let hello = "안녕하세요";
+    let s = &hello[..3];
+    let l = &hello[hello.len() - 3..];
+    println!("{}", s);
+    println!("{}", l);
+    let hello = "你好吗";
+    let s = &hello[..3];
+    let l = &hello[hello.len() - 3..];
+    println!("{}", s);
+    println!("{}", l);
+    let hello = "こんにちは";
+    let s = &hello[..3];
+    let l = &hello[hello.len() - 3..];
+    println!("{}", s);
+    println!("{}", l);
+    let hello = "مرحبا";
+    let s = &hello[..2];
+    let l = &hello[hello.len() - 2..];
+    println!("{}", s);
+    println!("{}", l);
+    let arrows = "🡐🡑🢁🢆🡘🢰🡙🢱";
+    let s = &arrows[..4];
+    let l = &arrows[arrows.len() - 4..];
+    println!("{}", s);
+    println!("{}", l);
+    let colors = "🟫🟪🟠🟡🟦";
+    let s = &colors[..4];
+    let l = &colors[colors.len() - 4..];
+    println!("{}", s);
+    println!("{}", l);
+    let sumer = "𒀀𒀈𒀺";
+    let s = &sumer[0..4];
+    let l = &sumer[sumer.len() - 4..];
+    println!("{}", s);
+    println!("{}", l);
+}

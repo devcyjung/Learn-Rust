@@ -159,6 +159,9 @@ version = "0.1.0"
 [[package]]
 name = "capturing_the_environment_with_closures"
 version = "0.1.0"
+dependencies = [
+ "rand 0.9.0",
+]
 
 [[package]]
 name = "catch_all_patterns_and_the___placeholder"

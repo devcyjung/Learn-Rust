@@ -1,3 +1,4 @@
+// Direct child files in tests directory serve as integration tests. Each file is a crate.
 mod common;
 
 #[test]

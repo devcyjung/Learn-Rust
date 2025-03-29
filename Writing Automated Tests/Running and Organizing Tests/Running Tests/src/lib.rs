@@ -1,3 +1,8 @@
+// cargo test options
+// cargo test test_options -- test_binary_options
+// cargo test --help
+// cargo test -- --help
+
 pub fn add_two(a: i32) -> i32 {
     a + 2
 }

@@ -1,21 +1,29 @@
 use crate::worker::Worker;
-/* You may need to use something */
+use std::cell::RefCell;
+use std::rc::Rc;
 
 pub struct Engine {
-    log: Vec<String>,
-    workers: Vec<Worker>
+    log: Rc<RefCell<Vec<String>>>,
+    workers: Vec<Worker>,
+}
+
+impl Default for Engine {
+    fn default() -> Self {
+        Self::new()
+    }
 }
 
 impl Engine {
+    #[must_use]
     pub fn new() -> Self {
-        Engine {
-            log: vec![],
-            workers: vec![]
+        Self {
+            log: Rc::new(RefCell::new(vec![])),
+            workers: vec![],
         }
     }
 
     pub fn add_worker(&mut self, id: usize) {
-        self.workers.push(Worker::new(id, &self.log))
+        self.workers.push(Worker::new(id, Rc::clone(&self.log)));
     }
 
     pub fn run(&self) {
@@ -23,8 +31,8 @@ impl Engine {
     }
 
     pub fn print_log(&self) {
-        for entry in &self.log {
-            println!("{}", entry)
+        for entry in self.log.borrow().iter() {
+            println!("{entry}");
         }
     }
 }

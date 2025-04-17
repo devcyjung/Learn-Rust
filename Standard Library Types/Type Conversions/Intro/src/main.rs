@@ -1,3 +1,1 @@
-fn main() {
-    // put your code here to launch it
-}
+const fn main() {}

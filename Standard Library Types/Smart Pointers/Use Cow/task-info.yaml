@@ -4,18 +4,18 @@ files:
     -   name: src/lib.rs
         visible: true
         placeholders:
-            -   offset: 427
-                length: 24
+            -   offset: 604
+                length: 8
                 placeholder_text: /* Borrowed or Owned? */
                 initial_state:
                     length: 24
                     offset: 427
                 initialized_from_dependency: false
                 encrypted_possible_answer: MLuR3BY8qm8XtwiFgA/hyg==
-                selected: false
-                status: Unchecked
-            -   offset: 545
-                length: 24
+                selected: true
+                status: Solved
+            -   offset: 706
+                length: 8
                 placeholder_text: /* Borrowed or Owned? */
                 initial_state:
                     length: 24
@@ -23,9 +23,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: MLuR3BY8qm8XtwiFgA/hyg==
                 selected: false
-                status: Unchecked
-            -   offset: 744
-                length: 24
+                status: Solved
+            -   offset: 873
+                length: 21
                 placeholder_text: /* Borrowed or Owned? */
                 initial_state:
                     length: 24
@@ -33,8 +33,8 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: MLuR3BY8qm8XtwiFgA/hyg==
                 selected: false
-                status: Unchecked
-            -   offset: 862
+                status: Solved
+            -   offset: 972
                 length: 24
                 placeholder_text: /* Borrowed or Owned? */
                 initial_state:
@@ -43,8 +43,8 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: yncgIhXa8OUYjdkPePBE1w==
                 selected: false
-                status: Unchecked
-            -   offset: 1055
+                status: Solved
+            -   offset: 1146
                 length: 24
                 placeholder_text: /* Borrowed or Owned? */
                 initial_state:
@@ -53,8 +53,8 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: yncgIhXa8OUYjdkPePBE1w==
                 selected: false
-                status: Unchecked
-            -   offset: 1173
+                status: Solved
+            -   offset: 1245
                 length: 24
                 placeholder_text: /* Borrowed or Owned? */
                 initial_state:
@@ -63,8 +63,8 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: yncgIhXa8OUYjdkPePBE1w==
                 selected: false
-                status: Unchecked
-            -   offset: 1367
+                status: Solved
+            -   offset: 1420
                 length: 24
                 placeholder_text: /* Borrowed or Owned? */
                 initial_state:
@@ -73,9 +73,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: yncgIhXa8OUYjdkPePBE1w==
                 selected: false
-                status: Unchecked
-            -   offset: 1485
-                length: 24
+                status: Solved
+            -   offset: 1524
+                length: 19
                 placeholder_text: /* Borrowed or Owned? */
                 initial_state:
                     length: 24
@@ -83,7 +83,7 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: yncgIhXa8OUYjdkPePBE1w==
                 selected: false
-                status: Unchecked
+                status: Solved
         learner_created: false
     -   name: src/main.rs
         visible: true
@@ -92,5 +92,8 @@ files:
         visible: false
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Standard+Library+Types+/+Smart+Pointers+/+Use+Cow
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Thu, 03 Apr 2025 12:01:29 UTC"
 record: -1

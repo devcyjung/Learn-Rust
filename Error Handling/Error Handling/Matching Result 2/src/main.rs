@@ -8,7 +8,7 @@ fn main() {
     let cost = match total_cost(pretend_user_input) {
         Ok(cost) => cost,
         Err(err) => {
-            println!("Error: {}", err);
+            println!("Error: {err}");
             exit(1);
         }
     };
@@ -17,7 +17,7 @@ fn main() {
         println!("You can't afford that many!");
     } else {
         tokens -= cost;
-        println!("You now have {} tokens.", tokens);
+        println!("You now have {tokens} tokens.");
     }
 }
 

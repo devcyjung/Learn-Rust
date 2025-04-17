@@ -6,10 +6,14 @@ fn main() {
     let smaller_than_cap: Vec<_> = elements
         .iter()
         .filter(|&&a| {
-            /* Complete the closure here */
+            let picked = a < cap;
+            if !picked {
+                left_behind += 1;
+            }
+            picked
         })
         .collect();
 
-    println!("{:?}", smaller_than_cap);
-    println!("{} elements left behind", left_behind);
+    println!("{smaller_than_cap:?}");
+    println!("{left_behind} elements left behind");
 }

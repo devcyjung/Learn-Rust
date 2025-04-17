@@ -1,4 +1,4 @@
-use fromstr::*;
+use fromstr::Person;
 
 fn main() {
     let p = "Mark,20".parse::<Person>().unwrap();

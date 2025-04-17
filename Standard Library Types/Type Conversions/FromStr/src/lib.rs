@@ -1,7 +1,7 @@
 use std::num::ParseIntError;
 use std::str::FromStr;
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Eq)]
 pub struct Person {
     pub name: String,
     pub age: usize,
@@ -22,21 +22,26 @@ pub enum ParsePersonError {
 
 impl From<ParseIntError> for ParsePersonError {
     fn from(err: ParseIntError) -> Self {
-        ParsePersonError::ParseInt(err)
+        Self::ParseInt(err)
     }
 }
 
 impl FromStr for Person {
     type Err = ParsePersonError;
-    fn from_str(s: &str) -> Result<Person, Self::Err> {
-        if s.len() == 0 {
-            /* Return am appropriate error */
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        if s.is_empty() {
+            return Err(Self::Err::Empty);
         }
-        let parts: Vec<&str> = s.split(',').collect();
-        /* Add a condition for the cases when there is a wrong number of fields and return an appropriate error */
-        /* Extract the first element from the split operation and use it as the name. Return an appropriate error if the field is empty. */
-        /* Extract the other element from the split and parse it as age. Return an appropriate error if something goes wrong. */
-
-        /* Return a Result of a Person object if everything goes well. */
+        let parts = s.split(',').collect::<Vec<_>>();
+        if parts.len() != 2 {
+            return Err(Self::Err::BadLen);
+        }
+        let name = if parts[0].is_empty() {
+            return Err(Self::Err::NoName);
+        } else {
+            String::from(parts[0])
+        };
+        let age = parts[1].parse::<usize>()?;
+        Ok(Self { name, age })
     }
 }

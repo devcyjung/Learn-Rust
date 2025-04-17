@@ -8,7 +8,7 @@ files:
         visible: true
         placeholders:
             -   offset: 60
-                length: 12
+                length: 9
                 placeholder_text: '&''a mut Lamp'
                 initial_state:
                     length: 12
@@ -16,19 +16,19 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: 1pR33ObwPM9F3p+fEd9GGA==
                 selected: false
-                status: Unchecked
-            -   offset: 121
-                length: 12
+                status: Solved
+            -   offset: 118
+                length: 8
                 placeholder_text: '&''a mut Lamp'
                 initial_state:
                     length: 12
                     offset: 121
                 initialized_from_dependency: false
                 encrypted_possible_answer: 1pR33ObwPM9F3p+fEd9GGA==
-                selected: false
-                status: Unchecked
-            -   offset: 195
-                length: 9
+                selected: true
+                status: Solved
+            -   offset: 188
+                length: 5
                 placeholder_text: '&mut self'
                 initial_state:
                     length: 9
@@ -36,7 +36,7 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: w85YO4eyFlsn9P9QFTCnGQ==
                 selected: false
-                status: Unchecked
+                status: Solved
         learner_created: false
     -   name: src/lib.rs
         visible: true
@@ -51,7 +51,7 @@ files:
         visible: true
         placeholders:
             -   offset: 0
-                length: 35
+                length: 20
                 placeholder_text: /* You may need to use something */
                 initial_state:
                     length: 35
@@ -59,19 +59,19 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: GHuD14OfreD59A/zK3vZdJNulbr0JVAoI6WRJD+jwQg=
                 selected: false
-                status: Unchecked
-            -   offset: 88
-                length: 4
+                status: Solved
+            -   offset: 74
+                length: 11
                 placeholder_text: bool
                 initial_state:
                     length: 4
                     offset: 88
                 initialized_from_dependency: false
                 encrypted_possible_answer: wSyLUkuNUgRerEqlLiNH4A==
-                selected: false
-                status: Unchecked
-            -   offset: 150
-                length: 7
+                selected: true
+                status: Solved
+            -   offset: 143
+                length: 13
                 placeholder_text: self.on
                 initial_state:
                     length: 7
@@ -79,19 +79,19 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: kx0UeyZ3RCBORHZMV70p7Q==
                 selected: false
-                status: Unchecked
-            -   offset: 185
-                length: 9
+                status: Solved
+            -   offset: 184
+                length: 5
                 placeholder_text: '&mut self'
                 initial_state:
                     length: 9
                     offset: 185
                 initialized_from_dependency: false
                 encrypted_possible_answer: w85YO4eyFlsn9P9QFTCnGQ==
-                selected: false
-                status: Unchecked
-            -   offset: 206
-                length: 14
+                selected: true
+                status: Solved
+            -   offset: 201
+                length: 18
                 placeholder_text: self.on = true
                 initial_state:
                     length: 14
@@ -99,9 +99,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: ptSeuUfIWEs1O2Xh87GG0+fUNnbx2WIJcin+uvlzzlQ=
                 selected: false
-                status: Unchecked
-            -   offset: 249
-                length: 9
+                status: Solved
+            -   offset: 248
+                length: 5
                 placeholder_text: '&mut self'
                 initial_state:
                     length: 9
@@ -109,9 +109,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: w85YO4eyFlsn9P9QFTCnGQ==
                 selected: false
-                status: Unchecked
-            -   offset: 270
-                length: 15
+                status: Solved
+            -   offset: 265
+                length: 19
                 placeholder_text: self.on = false
                 initial_state:
                     length: 15
@@ -119,8 +119,11 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: D5l5LDYc1rm7rD+A+J2gQHXtsizXre97YoXL/V9G2JU=
                 selected: false
-                status: Unchecked
+                status: Solved
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Standard+Library+Types+/+Smart+Pointers+/+Switch+the+Lamp
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Tue, 15 Apr 2025 19:45:33 UTC"
 record: -1

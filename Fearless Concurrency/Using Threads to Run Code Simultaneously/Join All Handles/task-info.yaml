@@ -4,18 +4,18 @@ files:
     -   name: src/main.rs
         visible: true
         placeholders:
-            -   offset: 165
-                length: 32
+            -   offset: 164
+                length: 13
                 placeholder_text: "/* TODO: Save the handle here */"
                 initial_state:
                     length: 32
                     offset: 165
                 initialized_from_dependency: false
                 encrypted_possible_answer: ePT2ZXu9ATkQ3HDxAFZdHA==
-                selected: false
-                status: Unchecked
-            -   offset: 346
-                length: 42
+                selected: true
+                status: Solved
+            -   offset: 319
+                length: 0
                 placeholder_text: "/* TODO: Push the handle into `handles` */"
                 initial_state:
                     length: 42
@@ -23,9 +23,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: vDb5nlEGrQT7BF+LNpu5AXqcRFmC4bQHwnXdQNroZVw=
                 selected: false
-                status: Unchecked
-            -   offset: 467
-                length: 32
+                status: Solved
+            -   offset: 497
+                length: 0
                 placeholder_text: "/* TODO: Join the handle here */"
                 initial_state:
                     length: 32
@@ -33,7 +33,7 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: tY3s90DdFOBT9Vm/OHmD6rxvHrKRnlKgs5cao8csI7M=
                 selected: false
-                status: Unchecked
+                status: Solved
         learner_created: false
     -   name: Cargo.toml
         visible: false
@@ -42,5 +42,8 @@ files:
         visible: false
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Fearless+Concurrency+/+Using+Threads+to+Run+Code+Simultaneously+/+Join+All+Handles
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Tue, 15 Apr 2025 22:37:30 UTC"
 record: -1

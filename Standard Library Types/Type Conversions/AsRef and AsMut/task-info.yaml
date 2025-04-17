@@ -5,7 +5,7 @@ files:
         visible: true
         placeholders:
             -   offset: 21
-                length: 121
+                length: 0
                 placeholder_text: |-
                     /*Obtain the number of bytes (not characters) in the given argument
                      Add the AsRef trait appropriately as a trait bound*/
@@ -14,10 +14,10 @@ files:
                     offset: 21
                 initialized_from_dependency: false
                 encrypted_possible_answer: mF2JvLUdn0ACb1Yn5VF3tQ==
-                selected: false
-                status: Unchecked
-            -   offset: 222
-                length: 122
+                selected: true
+                status: Solved
+            -   offset: 112
+                length: 0
                 placeholder_text: |-
                     /* Obtain the number of characters (not bytes) in the given argument
                      Add the AsRef trait appropriately as a trait bound*/
@@ -27,7 +27,7 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: mF2JvLUdn0ACb1Yn5VF3tQ==
                 selected: false
-                status: Unchecked
+                status: Solved
         learner_created: false
     -   name: src/main.rs
         visible: true
@@ -39,5 +39,8 @@ files:
         visible: false
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Standard+Library+Types+/+Type+Conversions+/+AsRef+and+AsMut
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Tue, 15 Apr 2025 22:12:37 UTC"
 record: -1

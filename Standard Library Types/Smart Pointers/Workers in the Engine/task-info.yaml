@@ -14,7 +14,7 @@ files:
         visible: true
         placeholders:
             -   offset: 0
-                length: 35
+                length: 42
                 placeholder_text: /* You may need to use something */
                 initial_state:
                     length: 35
@@ -22,43 +22,43 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: LzhpDCypNNO04yX6RjT017fVgGy8zxA/2cY/2E0OXSc1LllVHFqvn6l6rB8IYPZM
                 selected: false
-                status: Unchecked
-            -   offset: 81
-                length: 12
+                status: Solved
+            -   offset: 86
+                length: 25
                 placeholder_text: '&Vec<String>'
                 initial_state:
                     length: 12
                     offset: 81
                 initialized_from_dependency: false
                 encrypted_possible_answer: koXL2mFeEzoRqmFduPB79iyGNf4fJRVkaddYVDTwaWI=
-                selected: false
-                status: Unchecked
-            -   offset: 142
-                length: 12
+                selected: true
+                status: Solved
+            -   offset: 166
+                length: 24
                 placeholder_text: '&Vec<String>'
                 initial_state:
                     length: 12
                     offset: 142
                 initialized_from_dependency: false
                 encrypted_possible_answer: koXL2mFeEzoRqmFduPB79iyGNf4fJRVkaddYVDTwaWI=
-                selected: false
-                status: Unchecked
-            -   offset: 241
-                length: 41
+                selected: true
+                status: Solved
+            -   offset: 301
+                length: 13
                 placeholder_text: /* `push` requires a mutable reference */
                 initial_state:
                     length: 41
                     offset: 241
                 initialized_from_dependency: false
                 encrypted_possible_answer: 4Ty4pr2uOIupGI9An5n+vg==
-                selected: false
-                status: Unchecked
+                selected: true
+                status: Solved
         learner_created: false
     -   name: src/engine.rs
         visible: true
         placeholders:
-            -   offset: 27
-                length: 35
+            -   offset: 67
+                length: 2
                 placeholder_text: /* You may need to use something */
                 initial_state:
                     length: 35
@@ -66,51 +66,54 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: LzhpDCypNNO04yX6RjT017fVgGy8zxA/2cY/2E0OXSc1LllVHFqvn6l6rB8IYPZM
                 selected: false
-                status: Unchecked
-            -   offset: 93
-                length: 11
+                status: Solved
+            -   offset: 98
+                length: 25
                 placeholder_text: Vec<String>
                 initial_state:
                     length: 11
                     offset: 93
                 initialized_from_dependency: false
                 encrypted_possible_answer: koXL2mFeEzoRqmFduPB79iyGNf4fJRVkaddYVDTwaWI=
-                selected: false
-                status: Unchecked
-            -   offset: 209
-                length: 6
+                selected: true
+                status: Solved
+            -   offset: 324
+                length: 30
                 placeholder_text: "vec![]"
                 initial_state:
                     length: 6
                     offset: 209
                 initialized_from_dependency: false
                 encrypted_possible_answer: 3i9/UUD0r2jY/wiI0cOlrrdd8Sj6H3eNobxcboMu+mI=
-                selected: false
-                status: Unchecked
-            -   offset: 350
-                length: 9
+                selected: true
+                status: Solved
+            -   offset: 489
+                length: 20
                 placeholder_text: '&self.log'
                 initial_state:
                     length: 9
                     offset: 350
                 initialized_from_dependency: false
                 encrypted_possible_answer: Rb4ARw7HL3Eb/LEkQhgUOndEaM5xCBRSkE/+MFc0xZY=
-                selected: false
-                status: Unchecked
-            -   offset: 502
-                length: 9
+                selected: true
+                status: Solved
+            -   offset: 653
+                length: 25
                 placeholder_text: '&self.log'
                 initial_state:
                     length: 9
                     offset: 502
                 initialized_from_dependency: false
                 encrypted_possible_answer: XFaxyX8GXJz6VGGOuaX656kt2wdzGHkriR1JMD2pLlY=
-                selected: false
-                status: Unchecked
+                selected: true
+                status: Solved
         learner_created: false
     -   name: tests/output.txt
         visible: false
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Standard+Library+Types+/+Smart+Pointers+/+Workers+in+the+Engine
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Tue, 15 Apr 2025 20:07:32 UTC"
 record: -1

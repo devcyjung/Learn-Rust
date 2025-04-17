@@ -9,10 +9,10 @@ use std::fs::File;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let f = File::open("/home/rhel/.vimrc")?;
-    println!("FILE: {:?}", f);
+    println!("FILE: {f:?}");
     let f = File::open("hello.txt")?; // main() returns here.
-    println!("FILE: {:?}", f);
+    println!("FILE: {f:?}");
     let f = File::open("/home/rhel/.vimrc")?;
-    println!("FILE: {:?}", f);
+    println!("FILE: {f:?}");
     Ok(())
 }

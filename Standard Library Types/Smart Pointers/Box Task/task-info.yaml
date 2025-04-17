@@ -4,8 +4,8 @@ files:
     -   name: src/lib.rs
         visible: true
         placeholders:
-            -   offset: 58
-                length: 4
+            -   offset: 89
+                length: 9
                 placeholder_text: List
                 initial_state:
                     length: 4
@@ -13,9 +13,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: j/+iTtBNdYQtLykFM5Uvhw==
                 selected: false
-                status: Unchecked
-            -   offset: 119
-                length: 16
+                status: Solved
+            -   offset: 171
+                length: 3
                 placeholder_text: unimplemented!()
                 initial_state:
                     length: 16
@@ -23,9 +23,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: 9JsWD0JtxU3L0hxSELvf0w==
                 selected: false
-                status: Unchecked
-            -   offset: 184
-                length: 16
+                status: Solved
+            -   offset: 235
+                length: 42
                 placeholder_text: unimplemented!()
                 initial_state:
                     length: 16
@@ -33,7 +33,7 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: bBgqMswAXdsysoHwOT8s/h3Hb/2B0fMxL9sR/t8zsJIMOeLpY2sq3oZChNNCjW92
                 selected: false
-                status: Unchecked
+                status: Solved
         learner_created: false
     -   name: src/main.rs
         visible: true
@@ -45,5 +45,8 @@ files:
         visible: false
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Standard+Library+Types+/+Smart+Pointers+/+Box+Task
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Thu, 03 Apr 2025 01:37:12 UTC"
 record: -1

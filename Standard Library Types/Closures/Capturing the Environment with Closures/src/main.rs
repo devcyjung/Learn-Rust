@@ -1,4 +1,6 @@
-#![feature(linked_list_remove)]
+#![feature(linked_list_remove, test)]
+
+extern crate test;
 
 /**
 4 Different for loops over vec & slice
@@ -27,7 +29,6 @@ use std::{
     collections::{hash_map, HashMap, LinkedList},
     fmt,
 };
-
 
 use rand::{
     self,
@@ -224,6 +225,8 @@ fn main() {
 mod tests {
     use super::*;
     use std::collections::hash_map::Entry::Occupied;
+    use test::Bencher;
+
     fn setup<'a>(
         inventory_size: usize,
         user_population: usize,
@@ -244,7 +247,7 @@ mod tests {
     }
 
     #[test]
-    pub fn shirtcolor_equality_test() {
+    fn shirtcolor_equality_test() {
         assert_eq!(
             vec![ShirtColor::Black, ShirtColor::White],
             vec![ShirtColor::Black, ShirtColor::White],
@@ -289,7 +292,7 @@ mod tests {
     }
 
     #[test]
-    pub fn inventory_constructor_test() {
+    fn inventory_constructor_test() {
         assert_eq!(
             Inventory::from([ShirtColor::Black, ShirtColor::White]),
             Inventory::from(vec![ShirtColor::Black, ShirtColor::White]),
@@ -316,7 +319,7 @@ mod tests {
     }
 
     #[test]
-    pub fn inventory_add_stock_test() {
+    fn inventory_add_stock_test() {
         let mut store = Inventory::from([ShirtColor::Red, ShirtColor::Green]);
         for item in [
             ShirtColor::Blue,
@@ -365,7 +368,7 @@ mod tests {
     }
 
     #[test]
-    pub fn inventory_remove_stock_test() {
+    fn inventory_remove_stock_test() {
         let mut store1 = Inventory::from([
             ShirtColor::Red,
             ShirtColor::Green,
@@ -439,7 +442,7 @@ mod tests {
     }
 
     #[test]
-    pub fn most_stocked_test() {
+    fn most_stocked_test() {
         let store1 = Inventory::from([]);
         let store2 = Inventory::from([ShirtColor::Red]);
         let store3 = Inventory::from([ShirtColor::Green, ShirtColor::Red]);
@@ -476,7 +479,7 @@ mod tests {
     }
 
     #[test]
-    pub fn giveaway_test() {
+    fn giveaway_test() {
         let mut store1 = Inventory::from([
             ShirtColor::Red,
             ShirtColor::Blue,
@@ -559,7 +562,7 @@ mod tests {
     }
 
     #[test]
-    pub fn inventory_fuzz_test() {
+    fn inventory_fuzz_test() {
         let empty_stock_error = Err(IllegalStateError {
             message: String::from("No shirts in stock"),
         });
@@ -648,5 +651,15 @@ mod tests {
                 )
             }
         }
+    }
+
+    #[bench]
+    fn giveaway_bench(b: &mut Bencher) {
+        let (mut store, prefs) = setup(10000000, 1200000);
+        b.iter(|| {
+            for &&p in &prefs {
+                let _ = store.giveaway(p);
+            }
+        })
     }
 }

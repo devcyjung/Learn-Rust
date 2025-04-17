@@ -6,8 +6,9 @@ fn main() {
     // Using the move keyword to force a closure
     // to take ownership of the values it uses
     let handle = thread::spawn(move || {
-        println!("Here's a vector: {:?}", v);
+        println!("Here's a vector: {v:?}");
     });
 
-    handle.join().unwrap();
+    // drop(v);
+    handle.join().expect("failed to join child thread");
 }

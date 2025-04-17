@@ -4,16 +4,16 @@ files:
     -   name: src/lib.rs
         visible: true
         placeholders:
-            -   offset: 119
-                length: 23
+            -   offset: 245
+                length: 80
                 placeholder_text: // Something goes here!
                 initial_state:
                     length: 23
                     offset: 119
                 initialized_from_dependency: false
                 encrypted_possible_answer: kmKJYgbh4/MfXSFgM/ctjw==
-                selected: false
-                status: Unchecked
+                selected: true
+                status: Solved
         learner_created: false
     -   name: src/main.rs
         visible: true
@@ -25,5 +25,8 @@ files:
         visible: false
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Standard+Library+Types+/+Type+Conversions+/+Using+As
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Tue, 15 Apr 2025 20:24:23 UTC"
 record: -1

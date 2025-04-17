@@ -1,5 +1,4 @@
-pub fn vec_map(v: &Vec<i32>) -> Vec<i32> {
-    v.iter().map(|num| {
-        // TODO: Complete the function to multiply all the elements in the given vector
-    }).collect()
+#[must_use]
+pub fn vec_map(v: &[i32]) -> Vec<i32> {
+    v.iter().map(|num| 2 * num).collect()
 }

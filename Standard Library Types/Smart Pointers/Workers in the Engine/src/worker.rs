@@ -1,16 +1,19 @@
-/* You may need to use something */
+use std::cell::RefCell;
+use std::rc::Rc;
 
 pub struct Worker {
     id: usize,
-    log: &Vec<String>
+    log: Rc<RefCell<Vec<String>>>,
 }
 
 impl Worker {
-    pub fn new(id: usize, log: &Vec<String>) -> Self {
-        Worker { id, log }
+    pub const fn new(id: usize, log: Rc<RefCell<Vec<String>>>) -> Self {
+        Self { id, log }
     }
 
     pub fn run(&self) {
-        self.log./* `push` requires a mutable reference */push(format!("Worker {} did some work", self.id))
+        self.log
+            .borrow_mut()
+            .push(format!("Worker {} did some work", self.id));
     }
 }

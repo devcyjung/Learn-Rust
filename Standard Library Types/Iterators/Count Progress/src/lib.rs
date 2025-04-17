@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, hash::BuildHasher};
 
 #[derive(Clone, Copy, PartialEq, Eq)]
 pub enum Progress {
@@ -7,7 +7,8 @@ pub enum Progress {
     Complete,
 }
 
-pub fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
+#[must_use]
+pub fn count_for<S: BuildHasher>(map: &HashMap<String, Progress, S>, value: Progress) -> usize {
     let mut count = 0;
     for val in map.values() {
         if val == &value {
@@ -17,11 +18,16 @@ pub fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
     count
 }
 
-pub fn count(map: &HashMap<String, Progress>, value: Progress) -> usize {
-    /* TODO */
+#[must_use]
+pub fn count<S: BuildHasher>(map: &HashMap<String, Progress, S>, value: Progress) -> usize {
+    map.iter().filter(|(_, v)| **v == value).count()
 }
 
-pub fn count_stack_for(stack: &[HashMap<String, Progress>], value: Progress) -> usize {
+#[must_use]
+pub fn count_stack_for<S: BuildHasher>(
+    stack: &[HashMap<String, Progress, S>],
+    value: Progress,
+) -> usize {
     let mut count = 0;
     for map in stack {
         for val in map.values() {
@@ -33,6 +39,14 @@ pub fn count_stack_for(stack: &[HashMap<String, Progress>], value: Progress) -> 
     count
 }
 
-pub fn count_stack(stack: &[HashMap<String, Progress>], value: Progress) -> usize {
-    /* TODO */
+#[must_use]
+pub fn count_stack<S: BuildHasher>(
+    stack: &[HashMap<String, Progress, S>],
+    value: Progress,
+) -> usize {
+    stack
+        .iter()
+        .flat_map(|m| m.values())
+        .filter(|v| **v == value)
+        .count()
 }

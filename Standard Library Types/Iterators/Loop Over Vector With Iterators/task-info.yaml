@@ -13,8 +13,8 @@ files:
     -   name: src/lib.rs
         visible: true
         placeholders:
-            -   offset: 76
-                length: 79
+            -   offset: 75
+                length: 2
                 placeholder_text: "// TODO: Complete the function to multiply all the elements\
       \ in the given vector"
                 initial_state:
@@ -22,9 +22,12 @@ files:
                     offset: 76
                 initialized_from_dependency: false
                 encrypted_possible_answer: e09L+ZGuoEenl7oWl+ZD/Q==
-                selected: false
-                status: Unchecked
+                selected: true
+                status: Solved
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Standard+Library+Types+/+Iterators+/+Loop+Over+Vector+With+Iterators
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Wed, 02 Apr 2025 06:35:26 UTC"
 record: -1

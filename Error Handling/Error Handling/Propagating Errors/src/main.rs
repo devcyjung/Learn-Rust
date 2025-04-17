@@ -26,9 +26,9 @@ fn main() {
     // put you code here to launch it
     for fp in ["hello.txt", "/home/rhel", "/home/rhel/.vimrc"] {
         let res = read_username_from_file(fp)
-            .unwrap_or_else(|err| format!("Failed reading file due to error: {:?}", err));
-        println!("Path: {}", fp);
-        println!("{}", res);
+            .unwrap_or_else(|err| format!("Failed reading file due to error: {err:?}"));
+        println!("Path: {fp}");
+        println!("{res}");
         println!();
     }
 }

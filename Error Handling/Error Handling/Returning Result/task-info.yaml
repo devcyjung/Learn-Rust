@@ -17,7 +17,7 @@ files:
                 encrypted_possible_answer: aVz0abIXw8dx4icFflKwN8NEB0r+Wi+GCI5ysDeHRy4=
                 selected: true
                 status: Solved
-            -   offset: 105
+            -   offset: 104
                 length: 2
                 placeholder_text: Some
                 initial_state:
@@ -27,7 +27,7 @@ files:
                 encrypted_possible_answer: bc2B+quslAh78GJ5ih6t5w==
                 selected: false
                 status: Solved
-            -   offset: 246
+            -   offset: 243
                 length: 59
                 placeholder_text: None
                 initial_state:

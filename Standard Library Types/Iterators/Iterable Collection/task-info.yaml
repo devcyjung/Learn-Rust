@@ -10,8 +10,8 @@ files:
     -   name: src/main.rs
         visible: true
         placeholders:
-            -   offset: 141
-                length: 9
+            -   offset: 140
+                length: 20
                 placeholder_text: /* ??? */
                 initial_state:
                     length: 9
@@ -19,9 +19,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: Z+ZoZUqsAeXAgYRi8Tbkj+pqXsLhweQF/45KUBWTZc8=
                 selected: false
-                status: Unchecked
-            -   offset: 275
-                length: 9
+                status: Solved
+            -   offset: 272
+                length: 22
                 placeholder_text: /* ??? */
                 initial_state:
                     length: 9
@@ -29,9 +29,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: hsXuNWcids0PQJ2JWNKyXB+czDYd7pdAg8dIIHb0PyA=
                 selected: false
-                status: Unchecked
-            -   offset: 412
-                length: 9
+                status: Solved
+            -   offset: 422
+                length: 14
                 placeholder_text: /* ??? */
                 initial_state:
                     length: 9
@@ -39,9 +39,9 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: E10vNH1BXZ1Bz5ldims95A==
                 selected: false
-                status: Unchecked
-            -   offset: 553
-                length: 9
+                status: Solved
+            -   offset: 568
+                length: 4
                 placeholder_text: /* ??? */
                 initial_state:
                     length: 9
@@ -49,8 +49,11 @@ files:
                 initialized_from_dependency: false
                 encrypted_possible_answer: Irq9rdT6e89f7cEHZZBBTw==
                 selected: false
-                status: Unchecked
+                status: Solved
         learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLSdfJQgjsbDA4pPGpklj3vJnKNspd9wmEHzAgh6EkoJy2IiRuw/viewform?usp=pp_url&entry.2103429047=Standard+Library+Types+/+Iterators+/+Iterable+Collection
-status: Unchecked
+status: Solved
+feedback:
+    message: Congratulations!
+    time: "Wed, 02 Apr 2025 06:32:18 UTC"
 record: -1
